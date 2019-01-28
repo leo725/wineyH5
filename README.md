@@ -1,5 +1,5 @@
 # wineyh5
-
+红酒币交易h5  vue + webpack + mint-ui + axios + ali-oss
 > winey h5 shopping mall
 
 ## Build Setup
