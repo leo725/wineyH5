@@ -1,0 +1,429 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+ul,
+ol,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    overflow-x: hidden;
+}
+
+body,
+html,
+input,
+button,
+select,
+textarea {
+    outline: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font: 12px PingFangSC-Medium, '黑体', '微软雅黑', sans-serif;
+    outline: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /* Firefox */
+    -webkit-box-sizing: border-box;
+    /* Safari */
+    -o-user-select: text !important;
+    -moz-user-select: text !important;
+    -user-select: text !important;
+    -webkit-user-select: text !important;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /*  */
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+input {
+    border: none;
+}
+
+b {
+    font-weight: normal;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:link,
+a:focus {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    background: none;
+    text-decoration: none;
+}
+
+html,
+body,
+#app {
+    height: 100%;
+    overflow: auto;
+    background-color: #fff;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    border: 0;
+}
+
+img {
+    object-fit: cover;
+}
+
+
+/* 微信video 视频问题 */
+
+video {
+    position: relative;
+    z-index: 1 !important;
+    max-height: 480px;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/*清除浮动*/
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+/* between */
+
+.between {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #ccc;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #ccc;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #ccc;
+}
+
+.common-btn {
+    display: block;
+    width: 288px;
+    height: 88px;
+    line-height: 88px;
+    color: #fff;
+    background-color: #E50026 !important;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.common-btn.disabled {
+    background: #CCCCCC !important;
+}
+
+
+/* check-box */
+
+.common-checkbox {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.common-checkbox::before {
+    position: absolute;
+    content: '';
+    border: 4px solid #666;
+    z-index: 2;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.common-checkbox:checked::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    background: url(../img/icon-select.png) no-repeat;
+    background-size: 100% 100%;
+    border: 0;
+}
+
+
+/* Mint-ui 自定义样式 */
+
+
+/* picker */
+
+.picker-toolbar {
+    height: 80px;
+}
+
+.picker-toolbar span {
+    line-height: 80px;
+    font-size: 32px;
+}
+
+.picker-item {
+    font-size: 28px;
+}
+
+
+/* 遮罩层 */
+
+.v-modal {
+    opacity: 0.3;
+}
+
+
+/* 地区选择器 */
+
+.distpicker-address-wrapper {
+    height: 600px;
+    width: 100%;
+}
+
+.distpicker-address-wrapper .address-header ul li {
+    color: #E50026;
+    opacity: 0.8;
+    font-size: 32px;
+}
+
+.distpicker-address-wrapper .address-container ul li {
+    font-size: 28px;
+}
+
+.distpicker-address-wrapper .address-container {
+    overflow: auto;
+    height: 500px;
+    color: #333;
+}
+
+.distpicker-address-wrapper .address-header ul li.active,
+.distpicker-address-wrapper .address-container ul li.active {
+    color: #E50026;
+    opacity: 1;
+}
+
+.distpicker-address-wrapper .address-header ul li.active {
+    border-bottom: #E50026 solid 6px;
+}
+
+
+/*公共提示弹框样式*/
+
+.mint-msgbox {
+    width: 620px;
+    top: 38%;
+}
+
+.mint-msgbox-header {
+    padding-top: 40px;
+}
+
+.mint-msgbox-title {
+    font-size: 32px;
+}
+
+.mint-msgbox-content {
+    border-bottom: 1px solid #eee;
+}
+
+.mint-msgbox-message {
+    font-size: 30px;
+    color: #666666;
+    padding: 30px 65px;
+    text-align: left;
+}
+
+.mint-msgbox-btns {
+    height: 60px;
+}
+
+.mint-msgbox-btn {
+    font-size: 30px;
+    line-height: 60px;
+    height: 60px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.mint-msgbox-confirm {
+    color: #E50026;
+}
+
+.mint-msgbox-cancel {
+    border-color: #eee;
+}
+
+.mint-msgbox-btns {
+    height: 100px;
+}
+
+
+/*公共toast弹框*/
+
+.mint-toast-text {
+    font-size: 30px;
+}
+
+.mint-toast.error {
+    background-color: #FEF0F0;
+}
+
+.mint-toast.warning {
+    background-color: #FDF6EC;
+}
+
+.mint-toast.success {
+    background-color: #F0F9EB;
+}
+
+.mint-toast.info {
+    background-color: #F4F4F5;
+}
+
+.mint-toast.error .mint-toast-text {
+    color: #f56c6c;
+}
+
+.mint-toast.warning .mint-toast-text {
+    color: #e6a23c;
+}
+
+.mint-toast.success .mint-toast-text {
+    color: #67c23a;
+}
+
+.mint-toast.info .mint-toast-text {
+    color: #909399;
+}
+
+
+/* loadmore */
+
+.loadmore-container {
+    position: fixed;
+    top: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: scroll;
+}
+
+.mint-loadmore-text {
+    font-size: 24px;
+    color: #999;
+}
+
+.mint-loadmore-bottom {
+    padding: 10px 0;
+    height: auto;
+}
+
+.mint-loadmore {
+    /* height: 100%; */
+    overflow: auto;
+}
+
+.mint-loadmore-bottom {
+    display: none;
+}
+
+
+/* indicator */
+
+.mint-indicator-text {
+    font-size: 24px;
+}
+
+.mint-toast {
+    z-index: 3000;
+}
+
+.mint-indicator-wrapper {
+    z-index: 2999;
+}
+
+/* 百度商桥 */
+
+#nb_icon_wrap {
+    display: none !important;
+}
